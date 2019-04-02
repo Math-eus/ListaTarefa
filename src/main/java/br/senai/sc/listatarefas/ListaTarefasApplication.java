@@ -23,10 +23,10 @@ public class ListaTarefasApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Tarefa t1 = new Tarefa(1, "Fazer chamada", false);
-		Tarefa t2 = new Tarefa(2, "Cozinhar", false);
-		Tarefa t3 = new Tarefa(3, "Comprar Café", false);
-		Tarefa t4 = new Tarefa(4, "Comprar CD", false);
+		Tarefa t1 = new Tarefa(null, "Fazer chamada", false);
+		Tarefa t2 = new Tarefa(null, "Cozinhar", false);
+		Tarefa t3 = new Tarefa(null, "Comprar Café", false);
+		Tarefa t4 = new Tarefa(null, "Comprar CD", false);
 		tarefaRepository.saveAll(Arrays.asList(t1, t2, t3, t4));
 	}
 
